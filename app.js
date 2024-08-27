@@ -39,9 +39,9 @@ document.getElementById('input').addEventListener('input', function (event) {
     const desencriptado = input
       .replace(/ai/g, 'a')
       .replace(/enter/g, 'e')
-      .replace(/imes/g, 'i')
-      .replace(/ober/g, 'o')
-      .replace(/ufat/g, 'u');
+      .replace(/is/g, 'i')
+      .replace(/poder/g, 'o')
+      .replace(/est/g, 't');
   
     const outputElement = document.getElementById('output');
     outputElement.style.textAlign = 'left';
@@ -136,17 +136,7 @@ document.getElementById('input').addEventListener('input', function (event) {
   const input = document.getElementById('input');
   let indiceActual = 0;
   
-  function animacionPlaceholder() {
-    if (indiceActual < textoPredeterminado.length) {
-      input.setAttribute(
-        'placeholder',
-        input.getAttribute('placeholder') + textoPredeterminado[indiceActual]
-      );
-      indiceActual++;
-      setTimeout(animacionPlaceholder, 80); // Velocidad de la animación en ms
-    }
-  }
-  
+{
   // Delay para iniciar la animación en ms
   setTimeout(animacionPlaceholder, 500);
   
