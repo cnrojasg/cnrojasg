@@ -1,108 +1,49 @@
-{
-}
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Encriptador de Texto</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="./assets/bi_exclamation-circle-fill.svg">
-  </head>
-  <body>
-    <section class="superior">
-      <div id="barra__superior">
-        <a href="imagenes">
-          <img
-            class="barra__superior__frame 6"
-            src="./assets/alura.svg"
-            alt="Frame 6"
-          />
-        </a>
-        <img
-          class="barra__superior__muñeco"
-          src="./assets/muñeco.svg"
-          alt="muñeco"
-        />
-      </div>
-    </section>
-    <section class="inferior">
-      <div class="grid">
-        <div class="grid__input">
-          <div class="grid__input__ventana">
-            <div class="grid__input__ventana__top">
-              <img
-                class="grid__input__ventana__top__img"
-                src="./assets/menu-buttons-light-blue.svg"
-                aria-hidden="true"
-              />
-           
-          </div>
-          <div class="grid__input__bi_exclamation-circle-fill">
-            <div class="grid__input__bi_exclamation-circle-fill__logo-externo">
-              <div class="grid__input__bi_exclamation-circle-fill__logo-interno"><p>!</p></div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>Encriptador challenge</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Imagenes/Logo.svg" alt="logo">
+    </header>
+    <main>
+        <section class="seccion1">
+            <div class="contenedorcajatexto">
+                <textarea placeholder="Ingrese el texto aqui" class="cajatexto"></textarea>
             </div>
-            <div class="grid__input__alerta__texto">
-              <p>¡Sólo letras minúsculas y sin acentos!</p>
+            <div class="alerta">
+                <img src="Imagenes/alerta.svg" alt="alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
             </div>
-          </div>
-          <div class="grid__input__area-botones">
-            <button
-              onclick="encriptarTexto();"
-              id="botonEncriptar"
-              class="grid__input__area-botones--boton">Encriptar</button>
-            <button
-              onclick="desencriptarTexto();"
-              id="botonDesencriptar"
-              class="grid__input__area-botones--boton"
-            >
-              Desencriptar
-            </button>
-          </div>
-        </div>
-        <div class="grid__output">
-          <div class="grid__output__ventana">
-            <div class="grid__output__ventana__top">
-              <img
-                class="grid__output__ventana__top__img"
-                src="./assets/menu-buttons-Turquesa.svg"
-                aria-hidden="true"
-              />
+            <div class="contenedor-botones">
+                <input type="button" class="btn-encriptar" value="Encriptar">
+                <input type="button" class="btn-desencriptar" value="Desencriptar">
             </div>
-            <div id="output">
-             
+        </section>
+        <section class="seccion2">
+            <div class="contenedormunieco">
+                <img src="Imagenes/Muñeco.svg" alt="muñico">
             </div>
-            <div class="grid__output__area-botones">
-              <button
-                onclick="botonCopiar();"
-                class="grid__output__area-botones--boton"
-              >
-                Copiar
-              </button>
+            <div class="contenedor-parrafo">
+                <h3>Nigún mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
             </div>
-          </div>
-        </div>
-        <div class="decoracion">
-          <img
-            class="frame 6"
-            src="./assets/star-blue.svg"
-            aria-hidden="true"
-          />
-          <img
-            class="Muñeco"
-            src="./assets/star-Cornflower-blue.svg"
-            aria-hidden="true"
-          />
-          <img
-            class="bi_exclamation-circle-fill"
-            src="./assets/star-sky-blue.svg"
-            aria-hidden="true"
-         
-          
-        </div>
-      </div>
-    </section>
-    <script src="./app.js"></script>
-  </body>
-</html>
+            <div class="contenedor-copiar">
+                <input type="button" class="btn-copiar" value="Copiar">
+            </div>
+            <div class="contenedor-resultado">
+                <p class="texto-resultado"></p>
+            </div>
 
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
