@@ -1,6 +1,133 @@
 {
 }
-<!DOCTYPE HTML>
-<html lang= es>
-< head>
-<meta
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/smiley.svg">
+  </head>
+  <body>
+    <section class="superior">
+      <div id="barra__superior">
+        <a href="https://aluracursos.com">
+          <img
+            class="barra__superior__logo"
+            src="./assets/alura.svg"
+            alt="Logo de Alura"
+          />
+        </a>
+        <img
+          class="barra__superior__smiley"
+          src="./assets/smiley.svg"
+          alt="Cara sonriendo"
+        />
+      </div>
+    </section>
+    <section class="inferior">
+      <div class="grid">
+        <div class="grid__input">
+          <div class="grid__input__ventana">
+            <div class="grid__input__ventana__top">
+              <img
+                class="grid__input__ventana__top__img"
+                src="./assets/menu-buttons-purple.svg"
+                aria-hidden="true"
+              />
+            </div>
+            <textarea maxlength="1000" placeholder="" name="entrada" id="input"></textarea>
+            <img
+              class="grid__input__ventana--explosion"
+              src="./assets/explosion.svg"
+              aria-hidden="true"
+            />
+          </div>
+          <div class="grid__input__alerta">
+            <div class="grid__input__alerta__logo-externo">
+              <div class="grid__input__alerta__logo-interno"><p>!</p></div>
+            </div>
+            <div class="grid__input__alerta__texto">
+              <p>¡Sólo letras minúsculas y sin acentos!</p>
+            </div>
+          </div>
+          <div class="grid__input__area-botones">
+            <button
+              onclick="encriptarTexto();"
+              id="botonEncriptar"
+              class="grid__input__area-botones--boton">Encriptar</button>
+            <button
+              onclick="desencriptarTexto();"
+              id="botonDesencriptar"
+              class="grid__input__area-botones--boton"
+            >
+              Desencriptar
+            </button>
+          </div>
+        </div>
+        <div class="grid__output">
+          <div class="grid__output__ventana">
+            <div class="grid__output__ventana__top">
+              <img
+                class="grid__output__ventana__top__img"
+                src="./assets/menu-buttons-pink.svg"
+                aria-hidden="true"
+              />
+            </div>
+            <div id="output">
+             
+            </div>
+            <div class="grid__output__area-botones">
+              <button
+                onclick="botonCopiar();"
+                class="grid__output__area-botones--boton"
+              >
+                Copiar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="decoracion">
+          <img
+            class="decoracion--1"
+            src="./assets/star-blue.svg"
+            aria-hidden="true"
+          />
+          <img
+            class="decoracion--2"
+            src="./assets/star-purple.svg"
+            aria-hidden="true"
+          />
+          <img
+            class="decoracion--3"
+            src="./assets/star-purple.svg"
+            aria-hidden="true"
+          />
+          <img
+            class="decoracion--4"
+            src="./assets/star-pink.svg"
+            aria-hidden="true"
+          />
+          <img
+            class="decoracion--5"
+            src="./assets/star-pink.svg"
+            aria-hidden="true"
+          />
+          <img
+            class="decoracion--6"
+            src="./assets/star-pink.svg"
+            aria-hidden="true"
+          />
+          <img
+            class="decoracion--7"
+            src="./assets/star-pink.svg"
+            aria-hidden="true"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
+
