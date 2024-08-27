@@ -14,10 +14,10 @@ document.getElementById('input').addEventListener('input', function (event) {
   
     const encriptado = input
       .replace(/e/g, 'enter')
-      .replace(/i/g, 'imes')
-      .replace(/o/g, 'ober')
+      .replace(/i/g, 'is')
+      .replace(/o/g, 'poder')
       .replace(/a/g, 'ai')
-      .replace(/u/g, 'ufat');
+      .replace(/u/g, 'est');
   
     const outputElement = document.getElementById('output');
     outputElement.style.textAlign = 'left';
