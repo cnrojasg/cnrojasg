@@ -14,7 +14,7 @@
       <div id="barra__superior">
         <a href="https://aluracursos.com">
           <img
-            class="barra__superior__logo"
+            class="barra__superior__frame 6"
             src="./assets/alura.svg"
             alt="Frame 6"
           />
@@ -22,7 +22,7 @@
         <img
           class="barra__superior__muñeco"
           src="./assets/muñeco.svg"
-          alt="muñeco alura"
+          alt="muñeco"
         />
       </div>
     </section>
@@ -33,16 +33,10 @@
             <div class="grid__input__ventana__top">
               <img
                 class="grid__input__ventana__top__img"
-                src="./assets/menu-buttons-purple.svg"
+                src="./assets/menu-buttons-light-blue.svg"
                 aria-hidden="true"
               />
-            </div>
-            <textarea maxlength="1000" placeholder="" name="entrada" id="input"></textarea>
-            <img
-              class="grid__input__ventana--explosion"
-              src="./assets/explosion.svg"
-              aria-hidden="true"
-            />
+           
           </div>
           <div class="grid__input__alerta">
             <div class="grid__input__alerta__logo-externo">
@@ -71,7 +65,7 @@
             <div class="grid__output__ventana__top">
               <img
                 class="grid__output__ventana__top__img"
-                src="./assets/menu-buttons-pink.svg"
+                src="./assets/menu-buttons-Turquesa.svg"
                 aria-hidden="true"
               />
             </div>
@@ -90,40 +84,21 @@
         </div>
         <div class="decoracion">
           <img
-            class="decoracion--1"
+            class="frame 6"
             src="./assets/star-blue.svg"
             aria-hidden="true"
           />
           <img
-            class="decoracion--2"
-            src="./assets/star-purple.svg"
+            class="Muñeco"
+            src="./assets/star-Cornflower-blue.svg"
             aria-hidden="true"
           />
           <img
-            class="decoracion--3"
-            src="./assets/star-purple.svg"
+            class="bi_exclamation-circle-fill"
+            src="./assets/star-sky-blue.svg"
             aria-hidden="true"
-          />
-          <img
-            class="decoracion--4"
-            src="./assets/star-pink.svg"
-            aria-hidden="true"
-          />
-          <img
-            class="decoracion--5"
-            src="./assets/star-pink.svg"
-            aria-hidden="true"
-          />
-          <img
-            class="decoracion--6"
-            src="./assets/star-pink.svg"
-            aria-hidden="true"
-          />
-          <img
-            class="decoracion--7"
-            src="./assets/star-pink.svg"
-            aria-hidden="true"
-          />
+         
+          
         </div>
       </div>
     </section>
