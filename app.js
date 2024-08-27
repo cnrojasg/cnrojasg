@@ -113,7 +113,7 @@ const btnCopiar = document.querySelector(".btn-copiar");
   
     animarTexto(desencriptado, outputElement);
     limpiarCaja();
-  }
+  
   
   // Variables para manejar la animación y su cancelación
   let animacionEnCurso = false;
@@ -200,7 +200,7 @@ const btnCopiar = document.querySelector(".btn-copiar");
   const input = document.getElementById('input');
   let indiceActual = 0;
   
-{
+
   // Delay para iniciar la animación en ms
   setTimeout(animacionPlaceholder, 500);
   
