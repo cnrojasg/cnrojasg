@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador de Texto</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="./assets/smiley.svg">
+    <link rel="icon" href="./assets/bi_exclamation-circle-fill.svg">
   </head>
   <body>
     <section class="superior">
@@ -16,13 +16,13 @@
           <img
             class="barra__superior__logo"
             src="./assets/alura.svg"
-            alt="Logo de Alura"
+            alt="Frame 6"
           />
         </a>
         <img
-          class="barra__superior__smiley"
-          src="./assets/smiley.svg"
-          alt="Cara sonriendo"
+          class="barra__superior__muñeco"
+          src="./assets/muñeco.svg"
+          alt="muñeco alura"
         />
       </div>
     </section>
